@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Kalkulator.HistoryPage"
+             Title="HistoryPage">
+    <ListView Grid.Column="0" x:Name="HistoryList">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Grid RowDefinitions="*,*" >
+                        <Label Grid.Row="0" Grid.Column="0" Text="{Binding operation}" HorizontalTextAlignment="Center" FontSize="Large"/>
+                        <Button Grid.Row="1" Text="Przywroc" Clicked="HistoryGoBack" />
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>
