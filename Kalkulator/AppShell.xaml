@@ -5,13 +5,14 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Kalkulator"
     Shell.FlyoutBehavior="Disabled"
+    StyleId="shellId"
     >
     <TabBar >
-        <ShellContent class="tabs"
+        <ShellContent 
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
-        <ShellContent class="tabs"
+        <ShellContent 
         Title="History"
         ContentTemplate="{DataTemplate local:HistoryPage}"
         Route="HistoryPage" />
