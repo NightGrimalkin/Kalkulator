@@ -1,0 +1,34 @@
+﻿.calcGrid {
+    background-color: #081c15;
+    column-gap: 10;
+    row-gap: 10;
+}
+.calcGrid > * {
+   border-radius: 10;
+
+}
+.gradientButton {
+    background: linear-gradient(270deg, rgba(82, 183, 136,1) 95%, rgba(27, 67, 50,1) 5%);
+}
+.numberButtton {
+    background-color: #40916c;
+}
+.operatorButton {
+    background-color: #2d6a4f;
+}
+.clearButton, .equalsButton {
+    background-color: #1b4332;
+}
+.historyView {
+    background-color: #081c15;
+}
+
+
+#itemek {
+    background: linear-gradient(90deg, rgba(27, 67, 50,1) 5%, rgba(82, 183, 136,1) 95%);
+    margin: 10;
+    border-radius: 50;
+}
+#tabs {
+    background-color: #1b4332;
+}

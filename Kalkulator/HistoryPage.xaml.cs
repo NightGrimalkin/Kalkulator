@@ -9,6 +9,7 @@ public partial class HistoryPage : ContentPage
 {
     public ICalculatorData CalculatorData = DependencyService.Get<ICalculatorData>();
 
+   
     public HistoryPage()
 	{
 		InitializeComponent();
@@ -16,19 +17,11 @@ public partial class HistoryPage : ContentPage
 
     }
     
-    async public void HistoryGoBack(object sender, EventArgs e)
+     public void HistoryGoBack(object sender, EventArgs e)
 	{
         ICalculatorData tempHis = HistoryList.SelectedItem as ICalculatorData;
-        string tempRes="25";
 
-       // if (tempHis == null)
-       // {
-          //  return;
-       // }
-        //tempRes = "";
-
-        //CalculatorData.operation.Remove(tempHis);
-        await Shell.Current.GoToAsync($"///MainPage?result={tempRes}");
+       
 	}
 
     

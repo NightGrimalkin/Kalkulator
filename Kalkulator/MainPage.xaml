@@ -3,31 +3,30 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Kalkulator.MainPage">
 
-    <Grid ColumnDefinitions="*,*,*,*" RowDefinitions="*,*,*,*,*,*,*">
+    <Grid class="calcGrid" RowDefinitions="*,*,*,*,*,*,*" ColumnDefinitions="*,*,*,*">
 
-        <Label Grid.Row="0" Grid.ColumnSpan="4" Text=" " x:Name="EquationView" FontSize="Large" HorizontalTextAlignment="End"/>
+        <Label class="outputLabel" Grid.Row="0" Grid.ColumnSpan="4" Text=" " x:Name="EquationView" FontSize="Large" HorizontalTextAlignment="End"/>
 
-        <Button Text="0" Grid.Row="5" Grid.Column="1" Clicked="AnyMathOperator_Clicked" />
-        <Button Text="1" Grid.Row="4" Grid.Column="0" Clicked="AnyMathOperator_Clicked" />
-        <Button Text="2" Grid.Row="4" Grid.Column="1" Clicked="AnyMathOperator_Clicked" />
-        <Button Text="3" Grid.Row="4" Grid.Column="2" Clicked="AnyMathOperator_Clicked" />
-        <Button Text="4" Grid.Row="3" Grid.Column="0" Clicked="AnyMathOperator_Clicked" />
-        <Button Text="5" Grid.Row="3" Grid.Column="1" Clicked="AnyMathOperator_Clicked" />
-        <Button Text="6" Grid.Row="3" Grid.Column="2" Clicked="AnyMathOperator_Clicked" />
-        <Button Text="7" Grid.Row="2" Grid.Column="0" Clicked="AnyMathOperator_Clicked" />
-        <Button Text="8" Grid.Row="2" Grid.Column="1" Clicked="AnyMathOperator_Clicked" />
-        <Button Text="9" Grid.Row="2" Grid.Column="2" Clicked="AnyMathOperator_Clicked" />
+        <Button class="numberButtton" Text="0" Grid.Row="5" Grid.Column="1" Clicked="AnyMathOperator_Clicked" />
+        <Button class="numberButtton" Text="1" Grid.Row="4" Grid.Column="0" Clicked="AnyMathOperator_Clicked" />
+        <Button class="numberButtton" Text="2" Grid.Row="4" Grid.Column="1" Clicked="AnyMathOperator_Clicked" />
+        <Button class="numberButtton" Text="3" Grid.Row="4" Grid.Column="2" Clicked="AnyMathOperator_Clicked" />
+        <Button class="numberButtton" Text="4" Grid.Row="3" Grid.Column="0" Clicked="AnyMathOperator_Clicked" />
+        <Button class="numberButtton" Text="5" Grid.Row="3" Grid.Column="1" Clicked="AnyMathOperator_Clicked" />
+        <Button class="numberButtton" Text="6" Grid.Row="3" Grid.Column="2" Clicked="AnyMathOperator_Clicked" />
+        <Button class="numberButtton" Text="7" Grid.Row="2" Grid.Column="0" Clicked="AnyMathOperator_Clicked" />
+        <Button class="numberButtton" Text="8" Grid.Row="2" Grid.Column="1" Clicked="AnyMathOperator_Clicked" />
+        <Button class="numberButtton" Text="9" Grid.Row="2" Grid.Column="2" Clicked="AnyMathOperator_Clicked" />
 
-        <Button Text="+" Grid.Row="2" Grid.Column="3" Clicked="AnyMathOperator_Clicked"/>
-        <Button Text="-" Grid.Row="3" Grid.Column="3" Clicked="AnyMathOperator_Clicked"/>
-        <Button Text="*" Grid.Row="4" Grid.Column="3" Clicked="AnyMathOperator_Clicked"/>
-        <Button Text="/" Grid.Row="5" Grid.Column="3" Clicked="AnyMathOperator_Clicked"/>
-        <Button Text="." Grid.Row="6" Grid.Column="3" Clicked="AnyMathOperator_Clicked"/>
-        
-        <Button Text="C" Grid.Row="5" Grid.Column="0" Clicked="Clear"/>
+        <Button class="operatorButton" Text="+" Grid.Row="2" Grid.Column="3" Clicked="AnyMathOperator_Clicked"/>
+        <Button class="operatorButton" Text="-" Grid.Row="3" Grid.Column="3" Clicked="AnyMathOperator_Clicked"/>
+        <Button class="operatorButton" Text="*" Grid.Row="4" Grid.Column="3" Clicked="AnyMathOperator_Clicked"/>
+        <Button class="operatorButton" Text="/" Grid.Row="5" Grid.Column="3" Clicked="AnyMathOperator_Clicked"/>
+        <Button class="operatorButton" Text="." Grid.Row="6" Grid.Column="3" Clicked="AnyMathOperator_Clicked"/>
 
-        <Button Text="=" Grid.Row="5" Grid.Column="2" Clicked="Calcualte"/>
-        
+        <Button class="clearButton" Text="C" Grid.Row="5" Grid.Column="0" Clicked="Clear"/>
+        <Button class="equalsButton" Text="=" Grid.Row="5" Grid.Column="2" Clicked="Calcualte"/>
+        <Button class="gradientButton" Grid.Row="6" Grid.ColumnSpan="3"/>
 
 
     </Grid>
